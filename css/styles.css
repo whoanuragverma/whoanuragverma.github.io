@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+.navbar{
+    font-family: 'Bentham', serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+a,a:hover,a:visited{
+    color: #000
+}
+.row.main>div{
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+}
+.row.main>div>span{
+    position: relative;
+    top:50%;
+}
+.row.main>div:nth-child(2){
+    background-color: aqua;
+}
+.row.main>div:nth-child(3){
+    background-color: tomato;
+}
+
+@media screen and (max-width:768px){
+    .row.main>div{
+        height: 300px;
+    }
+    .row.main>div:first-child,.row.main>div:last-child{
+        height: 60px;
+    }
+    .row.main>div>span{
+        position: relative;
+        top:30%;
+    }
+}
