@@ -48,6 +48,7 @@
 .menu{
 	position: fixed;
 	width: 45%;
+	top:0px;
 	height: 100vh;
 	background-color:#fff;
 	z-index: 50;
@@ -85,10 +86,10 @@
 .menu-mobile{
 	display: none;
 }
-@media screen and (max-width:1024px) and (min-width:769px){
+@media screen and (min-width:768px) and (max-width:1024px){
 	.menu{
 		width: 60%;
-		padding-top: 60% ;
+		padding-top: 60vw ;
 	}
 	.menu .backdrop{
 		position: fixed;
