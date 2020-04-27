@@ -4,48 +4,49 @@
         <title>
             Anurag Verma
         </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
         <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
+        <script src="js/animations.js"></script>
     </head>
     <body>
-        <nav class="navbar m-1 pl-4 pr-4">
-            <a href="/" class="text-decoration-none">
-                ANURAG VERMA
-            </a>
-            <span class="float-right">
-                <a href="/">en</a>
-                <a href="/hi">hi</a>
-            </span>
-        </nav>
         <div class="container-fluid">
-            <div class="row main ">
-                <div class="col-md-half">
-                    <div class="toggle-icon">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+            <div class="home">
+                <div class="nav">
+                    <span class="name">
+                        <a href="/">anurag</a>
+                    </span>
+                    <div class="bar">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </div>
+                    <div class="bar-mobile">
+                        <span class="one-m"></span>
+                        <span class="two-m"></span>
                     </div>
                 </div>
-                <div class="col-md-5half">
-                    LEFT
-                </div>
-                <div class="col-md-5half">
-                    RIGHT
-                </div>
-                <div class="col-md-half">
-                    <span>
-                        SOCIAL
-                    </span>
-                </div>
+                
             </div>
-            CONTENT
+            <div class="menu">
+                <div class="backdrop" id="backdrop"></div>
+                <li><a href="/" data-src="Home">Home</a></li>
+                <li><a href="https://diary.anuragverma.codes" data-src="Diary" target="_blank">Diary</a></li>
+                <li><a href="/" data-src="Medium" target="_blank">Medium</a></li>
+                <li><a href="/" data-src="Resume" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/whoanuragverma" data-src="Github" target="_blank">Github</a></li>
+            </div>
+            <div class="menu-mobile">
+                <div class="backdrop" id="backdrop"></div>
+                <li><a href="/" data-src="Home">Home</a></li>
+                <li><a href="https://diary.anuragverma.codes" data-src="Diary" target="_blank">Diary</a></li>
+                <li><a href="/" data-src="Medium" target="_blank">Medium</a></li>
+                <li><a href="/" data-src="Resume" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/whoanuragverma" data-src="Github" target="_blank">Github</a></li>
+            </div>
         </div>
-        <div class="menu d-none">
-
-        </div>
+        
     </body>
 </html>
