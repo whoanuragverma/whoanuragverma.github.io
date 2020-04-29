@@ -1,92 +1,149 @@
-$(function () {
-	const navBar = anime.timeline({
-		easing: 'easeInCubic',
-		duration: 200,
-		autoplay: false
-	});
-	navBar.add({
-		targets: '.one',
-		rotate: 45
-	});
-	navBar.add({
-		targets: '.bar span',
-		borderColor: ["#fff", "#000"],
-		duration: 400
-	}, "-=400");
-	navBar.add({
-		targets: '.two',
-		rotate: -45,
-		translateX: -6.5,
-		translateY: -15
-	}, "-=200");
-	navBar.add({
-		targets: '.bar',
-		left: 35
-	}, "-=200");
-	navBar.add({
-		targets: '.name',
-		color: "#000"
-	}, "-=100")
-	navBar.add({
-		targets: '.menu',
-		left: 0,
-		duration: 500
-	}, "-=200");
-	$(".bar").on('click', function () {
-		if ($(this).hasClass("active")) {
-			navBar.reverse();
-			$(this).toggleClass("active");
-		} else {
-			navBar.play();
-			$(this).toggleClass("active");
-		}
-	})
-});
-$(function () {
-	const navBar = anime.timeline({
-		easing: 'easeInCubic',
-		duration: 200,
-		autoplay: false
-	});
-	navBar.add({
-		targets: '.one-m',
-		rotate: 45
-	});
-	navBar.add({
-		targets: '.bar-mobile span',
-		borderColor: ["#fff", "#000"]
-	}, "-=200");
-	navBar.add({
-		targets: '.bar-mobile',
-		top: "2vw"
-	}, "-=200");
-	navBar.add({
-		targets: '.two-m',
-		rotate: -45,
-		translateX: -7.5,
-		translateY: -16.5
-	}, "-=200");
-	navBar.add({
-		targets: '.name',
-		color: "#000"
-	}, "-=100")
-	navBar.add({
-		targets: '.menu-mobile',
-		top: 0,
-		opacity: [0, 1],
-		duration: 500
-	}, "-=200");
-	$(".bar-mobile").on('click', function () {
-		if ($(this).hasClass("active")) {
-			navBar.reverse();
-			$(this).toggleClass("active");
-		} else {
-			navBar.play();
-			$(this).toggleClass("active");
-		}
-	})
-});
-
+let ctr = 0;
+function anim(){
+	if(ctr%2==0){
+		const navBar = anime.timeline({
+			easing: 'easeInCubic',
+			duration: 200,
+			autoplay: true
+		});
+		navBar.add({
+			targets: '.one',
+			rotate: 45
+		});
+		navBar.add({
+			targets: '.bar span',
+			borderColor: ["#fff", "#000"],
+			duration: 400
+		}, "-=400");
+		navBar.add({
+			targets: '.two',
+			rotate: -45,
+			translateX: -6.5,
+			translateY: -15
+		}, "-=200");
+		navBar.add({
+			targets: '.bar',
+			left: 35
+		}, "-=200");
+		navBar.add({
+			targets: '.name',
+			color: "#000"
+		}, "-=100")
+		navBar.add({
+			targets: '.menu',
+			left: 0,
+			duration: 500
+		}, "-=200");
+	}else{
+		const navBar = anime.timeline({
+			easing: 'easeInCubic',
+			duration: 200,
+			autoplay: true
+		});
+		navBar.add({
+			targets: '.menu',
+			left: -900,
+			duration: 500
+		}, "-=200");
+		navBar.add({
+			targets: '.name',
+			color: "#fff"
+		}, "-=100");
+		navBar.add({
+			targets: '.bar',
+			left: 25
+		}, "-=200");
+		navBar.add({
+			targets: '.two',
+			rotate: 0,
+			translateX: 0,
+			translateY: 0
+		}, "-=200");
+		navBar.add({
+			targets: '.one',
+			rotate: 0
+		},"-=200");
+		navBar.add({
+			targets: '.bar span',
+			borderColor: ["#000", "#fff"],
+			duration: 400
+		}, "-=400");
+	}
+	ctr += 1;
+}
+let ctr_m = 0
+function m_anim(){
+	if(ctr_m%2==0){
+		const navBar = anime.timeline({
+			easing: 'easeInCubic',
+			duration: 200,
+			autoplay: true
+		});
+		navBar.add({
+			targets: '.one-m',
+			rotate: 45
+		});
+		navBar.add({
+			targets: '.bar-mobile span',
+			borderColor: ["#fff", "#000"],
+		}, "-=200");
+		navBar.add({
+			targets: '.two-m',
+			rotate: -45,
+			translateX: -7.5,
+			translateY: -16.5
+		}, "-=200");
+		navBar.add({
+			targets: '.bar-mobile',
+			top: "2vw"
+		}, "-=200");
+		navBar.add({
+			targets: '.name',
+			color: "#000"
+		}, "-=100")
+		navBar.add({
+			targets: '.menu-mobile',
+			top: 0,
+			opacity: [0,1],
+			duration: 500
+		}, "-=200");
+	}else{
+		const navBar = anime.timeline({
+			easing: 'easeInCubic',
+			duration: 200,
+			autoplay: true
+		});
+		navBar.add({
+			targets: '.menu-mobile',
+			top: -900,
+			duration: 500
+		}, "-=200");
+		navBar.add({
+			targets: '.name',
+			color: "#fff"
+		}, "-=100");
+		navBar.add({
+			targets: '.bar-mobile',
+			top: 0
+		}, "-=200");
+		navBar.add({
+			targets: '.two-m',
+			rotate: 0,
+			translateX: 0,
+			translateY: 0
+		}, "-=200");
+		navBar.add({
+			targets: '.one-m',
+			rotate: 0
+		},"-=200");
+		navBar.add({
+			targets: '.bar-mobile span',
+			borderColor: ["#000", "#fff"],
+			duration: 400
+		}, "-=400");
+	}
+	ctr_m += 1;
+}
 $(function () {
 	const links = anime.timeline({
 		easing: 'easeInCubic',

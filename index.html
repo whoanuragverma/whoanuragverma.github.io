@@ -10,20 +10,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="css/main.css" type="text/css">
 		<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="js/jq-clipthru.min.js"></script>
 		<script src="js/animations.js"></script>
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="home">
-				<div class="nav">
+				<div class="nav" id="unique">
 					<span class="name">
 					<a href="/">anurag</a>
 					</span>
-					<div class="bar">
+					<div class="bar" onclick="anim();">
 						<span class="one"></span>
 						<span class="two"></span>
 					</div>
-					<div class="bar-mobile">
+					<div class="bar-mobile" onclick="m_anim()">
 						<span class="one-m"></span>
 						<span class="two-m"></span>
 					</div>
@@ -58,5 +60,20 @@
 				<li><a href="https://github.com/whoanuragverma" data-src="Github" target="_blank">Github</a></li>
 			</div>
 		</div>
+		<div class="container-fluid">
+			<div class="home white" data-jq-clipthru="whiteclass">
+				New Content Block
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('#unique').clipthru({
+					autoUpdate: true,
+					autoUpdateInterval: 30,
+					debug: true
+				})
+			})
+		</script>
+		
 	</body>
 </html>
