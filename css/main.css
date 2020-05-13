@@ -37,16 +37,15 @@
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    position: relative;
-    top: -18vw;
-    left: 42.5vh;
+    padding-bottom: 70px;
+    padding-right: 30px;
 }
 
 .col .logo {
     font-family: 'Maven Pro', sans-serif;
     font-size: 14vw;
     line-height: 12vw;
-    position: absolute;
+    position: fixed;
     font-weight: 900;
     top: 15vh;
     right: -3.5vw;
@@ -167,12 +166,14 @@ a:visited {
     display: none;
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1025px) {
     .menu {
         width: 60%;
-        padding-top: 60vw;
+        
     }
-
+    .ipad-fix{
+        padding-top: 5pc;
+    }
     .menu .backdrop {
         position: fixed;
         left: 27% !important;
@@ -185,10 +186,10 @@ a:visited {
     }
 
     .col .logo {
-        font-size: 20vw;
-        line-height: 19vw;
-        top: 33vh;
-        right: -12.5vw;
+        font-size: 23vw;
+        line-height: 18vw;
+        top: 35vh;
+        right: -27.5vw;
     }
 }
 
@@ -205,7 +206,7 @@ a:visited {
     }
 
     .col .logo {
-        -webkit-transform: none;
+        /* -webkit-transform: none;
         -moz-transform: none;
         transform: none;
         -o-transform: none;
@@ -213,7 +214,8 @@ a:visited {
         line-height: 22vw;
         top: 50vh;
         overflow: hidden;
-        right: -0.5vw;
+        right: -0.5vw; */
+        display: none;
     }
 
     .content .col {
@@ -224,6 +226,7 @@ a:visited {
 
     .content .col .welcome {
         padding-top: 5vh;
+        width: 90vw;
     }
 
     .menu-mobile {
