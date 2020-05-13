@@ -27,9 +27,11 @@
     <!-- Scripts START -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c41e62370c.js" crossorigin="anonymous"></script>
     <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="js/jq-clipthru.min.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/scroll.js"></script>
     <!-- Scripts END -->
 </head>
 
@@ -64,6 +66,40 @@
                     <!-- <p class="logo">anurag<br>&nbsp;&nbsp;&nbsp;verma</p> -->
                 </div>
             </div>
+            <div class="col" id="social">                
+                <span>
+                    <a href="https://intsagram.com/whoanuragverma" target="_blank" rel="noreferrer" data-toggle="tooltip" title="Intsagram">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </span>
+                <span>
+                    <a href="https://twitter.com/whoanuragverma" target="_blank" rel="noreferrer" data-toggle="tooltip" title="Twitter">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </span>
+                <span>
+                    <a href="https://linkedin.com/in/whoanuragverma" target="_blank" rel="noreferrer" data-toggle="tooltip" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </span>
+                <span>
+                    <a href="https://www.hackerrank.com/whoanurag" target="_blank" rel="noreferrer" data-toggle="tooltip" title="Hackerrank">
+                        <i class="fab fa-hackerrank"></i>
+                    </a>
+                </span>
+                <span>
+                    <a href="https://github.com/whoanuragverma" target="_blank" rel="noreferrer" data-toggle="tooltip" title="Github">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </span>
+                <span>
+                    <a href="https://github.com/whoanuragverma/whoanuragverma.github.io" target="_blank" rel="noreferrer" data-toggle="tooltip" title="Source Code">
+                        <i class="fas fa-code-branch"></i>
+                    </a>
+                </span>
+            
+                
+            </div>
         </div>
         <div class="menu">
             <div class="backdrop" id="backdrop"></div>
@@ -71,7 +107,7 @@
             <li><a href="https://diary.anuragverma.codes" data-src="Diary" target="_blank">Diary</a></li>
             <li><a href="/" data-src="Medium" target="_blank">Medium</a></li>
             <li><a href="/" data-src="Resume" target="_blank">Resume</a></li>
-            <li><a href="https://github.com/whoanuragverma" data-src="Github" target="_blank">Github</a></li>
+            <li><a href="https://github.com/whoanuragverma" data-src="Github" target="_blank" rel="noreferrer">Github</a></li>
         </div>
         <div class="menu-mobile">
             <div class="backdrop" id="backdrop"></div>
@@ -84,7 +120,17 @@
     </div>
     <div class="container-fluid">
         <div class="home white" data-jq-clipthru="whiteclass">
-            New Content Block
+            <!-- New Content Block -->
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="home pink" data-jq-clipthru="pinkclass">
+            <!-- New Content Block -->
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="home blue" data-jq-clipthru="blueclass">
+            <!-- New Content Block -->
         </div>
     </div>
     <script>
@@ -93,7 +139,7 @@
                 autoUpdate: true,
                 autoUpdateInterval: 30,
                 debug: true
-            })
+            });
         });
     </script>
 
