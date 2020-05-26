@@ -55,7 +55,7 @@
 					<div class="col">
 						<div class="welcome">Hello</div>
 						<div class="welcome text">
-							This is a tiny little world designed by me.<br>
+							This is a tiny little world made by me.<br>
 							Dive in and feel free to click and explore.
 						</div>
 					</div>
@@ -132,7 +132,25 @@
 		</div>
 		<div class="container-fluid">
 			<div class="home pink" data-jq-clipthru="pinkclass">
-				<!-- New Content Block -->
+				<div class="animated-heart">
+					<i class="fas fa-heart"></i>
+				</div>
+				<div class="animated-data">
+					<p class="info-text">
+						Recent Projects<br>	
+						Things I did for love<br>
+						<hr class="lead small">
+					</p>
+					<div class="swipeable-card">
+						<div class="cards">CONTENT</div>
+						<div class="cards">CONTENT</div>
+						<div class="cards">CONTENT</div>
+						<div class="cards">CONTENT</div>
+						<div class="cards">CONTENT</div>
+						<div class="cards">CONTENT</div>
+						
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
@@ -148,6 +166,19 @@
 			        debug: true
 			    });
 			});
+			if("serviceWorker" in navigator){
+				console.log("CLIENT: SW regestration in progress.");
+				navigator.serviceWorker
+					.register('/serviceWorker.js')
+					.then(()=>{
+						console.log("CLIENT: Regestration Success");
+					})
+					.catch((err)=>{
+						console.log("CLIENT: Regestration Failed",err);
+					})
+			}else{
+				console.log("CLIENT: Regestration Failed(Not Supported)");
+			}
 		</script>
 	</body>
 </html>

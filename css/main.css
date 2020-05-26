@@ -14,7 +14,9 @@
 	height: 100vh;
 	overflow-x: hidden;
 }
-
+::-webkit-scrollbar{
+	display: none;
+}
 .white {
 	background-color: #fff;
 	overflow: hidden;
@@ -110,12 +112,17 @@ a:visited {
 	-o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
+.animated-data .info-text{
+	color: #e75480;
+	font-size: 2.2em;
+}
 .home.white .data {
 	width: 49%;
 	display: inline-block;
 }
-
+.home.pink{
+	height: 230vh;
+}
 .content {
 	width: 100%;
 	padding-left: 7vw;
@@ -140,7 +147,18 @@ a:visited {
 	font-weight: 800;
 	font-size: 48px;
 }
-
+.animated-heart{
+	color: #e75480;
+	font-size: 30px;
+	position: relative;
+	top: 50vh;
+	left: 47%;
+}
+.animated-data{
+	display: none;
+	position: fixed;
+	top: 10vh;
+}
 .info-text::first-line {
 	font-size: 25px;
 	font-weight: 200;
@@ -250,7 +268,9 @@ hr.lead.small {
 	letter-spacing: 1.5px;
 	cursor: pointer;
 }
-
+.animated-data .lead.small{
+	border-color: #e75480;
+}
 .welcome.text {
 	font-size: 1.2em !important;
 	padding-top: 0px !important;
@@ -261,7 +281,23 @@ hr.lead.small {
 .menu-mobile {
 	display: none;
 }
-
+.swipeable-card{
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	padding-left: 7pc;
+	padding-bottom: 1pc;
+    padding-top: 0.3pc;
+}
+.cards{
+	display: inline-block;
+	width: 300px;
+	height: 60vh;
+	padding: 18px;
+	background-color: #ffffffcc;
+	margin-right:17px;
+	box-shadow: 6px 6px 10px 1px #e75480;
+}
 @media screen and (device-width:768px) {
 	.data.pl-5.pt-5.pr-5 {
 		padding-top: 20% !important;
@@ -285,6 +321,7 @@ hr.lead.small {
 	.ipad-fix {
 		padding-top: 5pc;
 	}
+	
 	.menu .backdrop {
 		position: fixed;
 		left: 27% !important;
@@ -322,6 +359,13 @@ hr.lead.small {
 		width: 100%;
 		height: 10%;
 	}
+	.animated-data .info-text{
+		padding-left: 24px;
+		padding-right: 1px;
+	}
+	.swipeable-card{
+		padding: 24px;
+	}
 	.content {
 		padding: 0;
 		padding-top: 9vh;
@@ -334,6 +378,11 @@ hr.lead.small {
 		text-align: center;
 		padding-top: 15vh;
 		padding-right: 0;
+	}
+	.animated-data .lead.small{
+		margin-left: 24px;
+		width: 88%;
+		border-width: 0.3px;
 	}
 	.custom-image {
 		position: relative;
