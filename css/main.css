@@ -4,12 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 .container-fluid {
     padding: 0px;
     margin: 0px;
 }
 
 @-moz-document url-prefix() {
+
     /* Disable scrollbar Firefox */
     html,
     .swipeable-card {
@@ -154,9 +156,17 @@ a:visited {
     font-size: 2.2em;
 }
 
+.home.darkblue {
+    height: 25vh;
+    background-color: #0f4d92;
+    color: #fff;
+    padding: 1.8em;
+}
+
 .project-info .h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500 !important;
+    font-size: 1.5rem !important;
 }
 
 .links i {
@@ -383,12 +393,15 @@ hr.lead.small {
     .data.pl-5.pt-5.pr-5 {
         padding-top: 20% !important;
     }
+
     .info-text-small {
         width: 80%;
     }
+
     .lead.small {
         width: 560px !important;
     }
+
     .custom-image {
         padding-top: 10vh !important;
         left: 47% !important;
@@ -399,23 +412,29 @@ hr.lead.small {
     .menu {
         width: 60%;
     }
+
     .ipad-fix {
         padding-top: 5pc;
     }
+
     .menu .backdrop {
         position: fixed;
         left: 27% !important;
         top: 46%;
     }
+
     .info-text-small {
         width: 85%;
     }
+
     .data {
         padding-top: 20% !important;
     }
+
     .lead.small {
         width: 670px !important;
     }
+
     .custom-image {
         position: relative;
         top: -15vh;
@@ -424,14 +443,17 @@ hr.lead.small {
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+
     .name {
         top: -60vw;
         left: 47vh;
     }
+
     .home.white .data {
         width: 100%;
         height: 50vh;
     }
+
     .links {
         position: relative;
         top: 5vh;
@@ -443,47 +465,58 @@ hr.lead.small {
         width: 100%;
         height: 10%;
     }
+
     .links {
         position: relative;
         top: 3vh;
     }
+
     .animated-data .info-text {
         padding-left: 24px;
         padding-right: 1px;
     }
+
     .swipeable-card {
         padding: 24px;
     }
+
     .content {
         padding: 0;
         padding-top: 9vh;
     }
+
     .info-text-small {
         padding-left: 0;
     }
+
     #social {
         top: 0;
         text-align: center;
         padding-top: 15vh;
         padding-right: 0;
     }
+
     .home.blue .info-text {
         padding-left: 24px;
         padding-right: 1px;
     }
+
     .animated-data .lead.small {
         margin-left: 24px;
         width: 88%;
         border-width: 0.3px;
     }
+
     .home.blue hr.lead.small {
         margin-left: 24px;
         width: 88%;
         border-width: 0.3px;
     }
+
     .home.blue .info-text {
         padding-top: 10vh;
     }
+
     .custom-image {
         position: relative;
         top: 0;
@@ -492,28 +525,34 @@ hr.lead.small {
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+
     .home.white .data {
         width: 100%;
         overflow: hidden !important;
     }
+
     .info-text {
         padding-left: 0;
         font-size: 2.5em;
         padding-top: 0;
     }
+
     hr.lead.small {
         width: 100%;
         margin-left: 0;
     }
+
     .content .col {
         width: 100%;
         height: 49%;
         display: block;
     }
+
     .content .col .welcome {
         padding-top: 5vh;
         width: 90vw;
     }
+
     .menu-mobile {
         z-index: 10;
         position: fixed;
@@ -534,6 +573,7 @@ hr.lead.small {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
             0 10px 10px rgba(0, 0, 0, 0.22);
     }
+
     .menu-mobile .backdrop {
         z-index: 5;
         position: absolute;
@@ -545,6 +585,7 @@ hr.lead.small {
         font-family: "Raleway", sans-serif;
         opacity: 1;
     }
+
     .menu-mobile li {
         list-style: none;
         font-family: "Montserrat", sans-serif;
@@ -557,10 +598,12 @@ hr.lead.small {
         -o-transition: all ease 0.2s;
         transition: all ease 0.2s;
     }
+
     .menu-mobile li:hover {
         font-size: 1.7em;
         font-weight: 600;
     }
+
     .bar-mobile {
         display: inline-block;
         -ms-transform: rotate(90deg);
@@ -572,21 +615,26 @@ hr.lead.small {
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
     }
+
     .nav.whiteclass .bar-mobile span {
         border-left: 2px solid #000 !important;
     }
+
     .nav.pinkclass .bar-mobile span {
         border-left: 2px solid #e75480 !important;
     }
+
     .nav.blueclass .bar-mobile span {
         border-left: 2px solid #0f4d92 !important;
     }
+
     .bar-mobile span {
         display: inline-block;
         border-left: 2px solid #fff;
         height: 30px;
         padding: 5px;
     }
+
     .name {
         -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
@@ -599,6 +647,7 @@ hr.lead.small {
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
     }
+
     .bar,
     .menu {
         display: none;
